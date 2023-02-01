@@ -1,4 +1,4 @@
-# Clash Subscription Update
+# Update Clash Subscription
 
 > raycast extension to update clash subscription & insert custom rules
 
