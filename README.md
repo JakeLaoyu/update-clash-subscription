@@ -30,6 +30,8 @@ Content Demo:
 }
 ```
 
+![](metadata/scr-2.png)
+
 ### Command
 
 ![](metadata/scr-1.png)
