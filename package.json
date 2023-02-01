@@ -13,22 +13,16 @@
     {
       "name": "index",
       "title": "update clash subscription",
-      "description": "Template with a plain detail view",
-      "mode": "view",
-      "arguments": [
-        {
-          "name": "subscription url",
-          "placeholder": "v2club | https://subscription-url.com",
-          "type": "text",
-          "required": true
-        }
-      ]
+      "description": "update clash subscription",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.46.1"
+    "@raycast/api": "^1.46.1",
+    "fs-extra": "^11.1.0"
   },
   "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "18.8.3",
     "@types/react": "18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -44,5 +38,22 @@
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "ray publish"
-  }
+  },
+  "preferences": [
+    {
+      "name": "subscriptionUrl",
+      "description": "Subscription address",
+      "type": "textfield",
+      "required": true,
+      "title": "subscription url",
+      "placeholder": "v2club | https://sub-url.com"
+    },
+    {
+      "name": "rules",
+      "description": "Custom rules",
+      "type": "file",
+      "required": false,
+      "title": "rules"
+    }
+  ]
 }
