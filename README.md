@@ -2,6 +2,16 @@
 
 > raycast extension to update clash subscription & insert custom rules
 
+## Usage
+
+This extension is not published to the store. So you need to clone this repo and run it locally.
+
+```shell
+git clone https://github.com/JakeLaoyu/update-clash-subscription.git
+npm install
+npm run dev
+```
+
 ## Config
 
 ### Subscription Url
