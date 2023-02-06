@@ -16,9 +16,10 @@ npm run dev
 
 ### Subscription Url
 
-First, you need to convert a subscription url. You can use [this tool](https://sub.xeton.dev) to convert.
+First, you need to convert a subscription url. You can use [this tool](https://sub.jakeyu.top) to convert.
 
 Other tools:
+- https://sub.xeton.dev
 - https://sub.dler.io/
 - https://sublink.dev/
 - https://nexconvert.com/
