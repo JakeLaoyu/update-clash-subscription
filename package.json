@@ -12,9 +12,9 @@
   "commands": [
     {
       "name": "index",
-      "title": "update clash subscription",
+      "title": "Update Clash Subscription",
       "subtitle": "clash",
-      "description": "update clash subscription",
+      "description": "Update clash subscription",
       "mode": "no-view"
     }
   ],
