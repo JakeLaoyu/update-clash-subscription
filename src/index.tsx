@@ -42,12 +42,9 @@ export default async function Command() {
 
     const rulesContent = (rules ? await readJson(rules) : {}) as RuleFile;
 
-    const setRulePromiseArr: Promise<unknown>[] = [];
-    (rulesContent?.rules || []).reverse().forEach((rule) => {
-      setRulePromiseArr.push(exec(sedCmd(filePath, rule)));
-    });
-
-    await Promise.all(setRulePromiseArr);
+    for (const rule of rulesContent?.rules || []) {
+      await exec(sedCmd(filePath, rule));
+    }
 
     await showHUD("Subscription update successful");
   } catch (error) {
