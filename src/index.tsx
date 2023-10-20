@@ -19,7 +19,7 @@ const curlCmd = (filePath: string, url: string) => {
 
 const sedCmd = (filePath: string, ruleRow: string) => {
   return `sed -i '' '/rules:/a\\
- ${ruleRow}
+  ${ruleRow}
 ' ${filePath}`;
 };
 
@@ -43,7 +43,7 @@ export default async function Command() {
     const rulesContent = (rules ? await readJson(rules) : {}) as RuleFile;
 
     for (const rule of rulesContent?.rules || []) {
-      await exec(sedCmd(filePath, rule));
+      await exec(sedCmd(filePath, `${rule}`));
     }
 
     await showHUD("Subscription update successful");
